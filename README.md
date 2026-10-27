@@ -102,11 +102,9 @@ python scripts/02_clean_pulses.py
 python scripts/08_recover.py
 ```
 
-or all of them at once:
-
-```bash
-./run_all.sh
-```
+Run them one at a time, and before the next one look at what the script printed and at its
+figures: each step uses what the previous ones found. `docs/walkthrough.pdf` shows what to expect
+at each step on RUN1.
 
 Every script takes `--channels` and `--runs` to work on part of the data, for example
 `python scripts/08_recover.py --runs RUN2 --channels 1`. A script only needs the outputs of the
@@ -250,7 +248,6 @@ the channel. This is not needed for `events.csv`.
 
 ```
 config.py              the settings (runs, channels, output folder, peak energy, workers)
-run_all.sh             runs the eight scripts in order
 scripts/               the steps, 01_read_data.py … 08_recover.py, checks.py and export_clean_pulses.py
 docs/code_guide.md     how the code works, step by step
 docs/walkthrough.pdf   a full run on RUN1: each command, its output and its figures
