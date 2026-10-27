@@ -1,0 +1,13 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zgz-pileup"
+version = "0.1.0"
+description = "Template-matching pile-up recovery for ZGZ-type triggered records"
+requires-python = ">=3.9"
+dependencies = ["numpy>=1.22", "scipy>=1.8", "pandas>=1.4", "matplotlib>=3.5"]
+
+[tool.setuptools]
+packages = ["zgzpileup"]
