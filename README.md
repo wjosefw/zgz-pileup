@@ -9,7 +9,8 @@ tail and the undershoot below baseline, is measured from the data itself.
 What the method does and why is explained in the accompanying report
 (*Template-matching recovery of pile-up in the ZGZ RUN1 records*). How the code does it, step
 by step, with every fixed setting and where it is, is in `docs/code_guide.md` (also as PDF).
-This guide is only about running it.
+This guide is only about running it; `docs/walkthrough.pdf` shows a full run on RUN1, step by step,
+with what each script prints and draws.
 
 ---
 
@@ -252,6 +253,7 @@ config.py              the settings (runs, channels, output folder, peak energy,
 run_all.sh             runs the eight scripts in order
 scripts/               the steps, 01_read_data.py … 08_recover.py, checks.py and export_clean_pulses.py
 docs/code_guide.md     how the code works, step by step
+docs/walkthrough.pdf   a full run on RUN1: each command, its output and its figures
 zgzpileup/
   io.py                reading c<ch>.txt / zip and out.txt; record ↔ out.txt matching
   pulses.py            selection of the clean pulses, pulse shape, amplitudes
